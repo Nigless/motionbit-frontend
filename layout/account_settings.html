@@ -22,7 +22,7 @@
 			</content>
 		</header>
 			<content>
-				<div class="_page">
+				<div class="_page _avoidheader">
 					<div class="_wrap w3 settings _flex _cheader">
 						<!-- sidebar -->
 						<div class="sidebar">
@@ -35,102 +35,114 @@
 						<!-- settings -->
 						<div class="container">
 							<div class="padding_wrap">
-								<h1>Account</h1>
-								<div class="card-container _round _outline _cutbottom">
-									<div class="card-header">
-										<h3 class="h3-card">Profile</h3><button class="button hollow x1">edit</button>
-									</div>
-									<div class="card-content">
+								<h1>Account</h1> 			
+								<div class="card _round _outline _whitebg _cutbottom">
+									<header>
+										<h3>Profile</h3><button class="button hollow x1">edit</button>
+									</header>
+									<div class="content">
 										<div class="message-box ok">Successful changes saved</div>
 										<div class="_margin _center">
 											<img src="src/testavatar.png" class="avatar x160 _shade"/>
 										</div>
 										<table width="70%">
-											<tr><td class="card-label table-margin">ID</td><td class="card-subtext table-margin _overflow">1</td></tr>
-											<tr><td class="card-label table-margin">Display Name</td><td class="card-subtext table-margin _overflow">xrystalys</td></tr>
-											<tr><td class="card-label table-margin">E-mail</td><td class="card-subtext table-margin _overflow">mrmerkgamma1227@ya.ru</td></tr>
-											<tr><td class="card-label table-margin">First Name</td><td class="card-subtext table-margin _overflow">Dimitry</td></tr>
-											<tr><td class="card-label table-margin">Last Name</td><td class="card-subtext table-margin _overflow">Morozov</td></tr>
+											<tr><td class="l">ID</td><td class="_overflow">1</td></tr>
+											<tr><td class="l">Display Name</td><td class="_overflow">xrystalys</td></tr>
+											<tr><td class="l">E-mail</td><td class="_overflow">mrmerkgamma1227@ya.ru</td></tr>
+											<tr><td class="l">First Name</td><td class="_overflow">Dimitry</td></tr>
+											<tr><td class="l">Last Name</td><td class="_overflow">Morozov</td></tr>
 										</table>
 									</div>
 								</div>
-								<div class="card-container _round _outline _cutbottom">
-									<div class="card-header">
-										<h3 class="h3-card">Billing & Shipping address</h3><button class="button hollow x1">edit</button>
-									</div>
-									<div class="card-content">
+								<div class="card _round _outline _whitebg _cutbottom">
+									<header>
+										<h3>Billing & Shipping address</h3><button class="button hollow x1">edit</button>
+									</header>
+									<div class="content">
 										<table width="70%">
-											<tr><td class="card-label table-margin">Billing address</td><td class="card-subtext table-margin _overflow">1335 4th St, San Francisco, CA 94158, United States</td></tr>
-											<tr><td class="card-label table-margin">Shipping address</td><td class="card-subtext table-margin _overflow">1335 4th St, San Francisco, CA 94158, United States</td></tr>
+											<tr><td class="l">Billing address</td><td class="_overflow">1335 4th St, San Francisco, CA 94158, United States</td></tr>
+											<tr><td class="l">Shipping address</td><td class="_overflow">1335 4th St, San Francisco, CA 94158, United States</td></tr>
 										</table>
 									</div>
 								</div>
-								<div class="card-container _round _outline _cutbottom">
-									<div class="card-header">
-										<h3 class="h3-card">Profile (editing)</h3><button class="button hollow x1 gray" type="button">cancel</button>
-									</div>
-									<div class="card-content">
-										<div class="message-box">After complete click "save" or "cancel"</div>
+								<div class="card _round _outline _whitebg _cutbottom">
+									<header>
+										<h3>Profile (editing)</h3><button class="button hollow x1 gray" type="button">cancel</button>
+									</header>
+									<div class="content">
+										<div class="message-box">
+											After complete click "save" or "cancel"
+										</div>
 										<form class="card-form" enctype="application/x-www-form-urlencoded" method="get" id="form-here_name" novalidate="">
 											<div class="_margin _center">
 												<img src="src/testavatar.png" class="avatar x160"/>
 												<span class="upload-overlay"></span>
 											</div>
 											<table width="100%">
-												<tr><td class="card-label table-margin">
-													<div class="textbox _grayed">      
-														<input name="loremipsum" id="textbox-here_name" autocomplete="off" type="text" value="1" disabled required/>
-														<span class="textboxbar"></span>
-														<label class="disabled">ID</label>
-													</div>
-													<div class="textbox">      
-														<input name="loremipsum" id="textbox-here_name" autocomplete="off" type="text" value="xrystalys" drequired/>
-														<span class="textboxbar"></span>
-														<label>Display Name</label>
-													</div>
-													<div class="textbox">      
-														<input name="loremipsum" id="textbox-here_name" autocomplete="off" type="text" value="mrmerkgamma1227@ya.ru" required/>
-														<span class="textboxbar"></span>
-														<label>E-mail</label>
-													</div>
-													<div class="textbox">      
-														<input name="loremipsum" id="textbox-here_name" autocomplete="off" type="text" value="Dimitry" required/>
-														<span class="textboxbar"></span>
-														<label>First Name</label>
-													</div>
-													<div class="textbox">      
-														<input name="loremipsum" id="textbox-here_name" autocomplete="off" type="text" value="Morozov" required/>
-														<span class="textboxbar"></span>
-														<label>Last Name</label>
-													</div>
-												</td></tr>
+												<tr>
+													<td>
+														<div class="textbox _grayed">      
+															<input name="loremipsum" id="textbox-here_name" autocomplete="off" type="text" value="1" disabled required/>
+															<span class="textboxbar"></span>
+															<label class="disabled">ID</label>
+														</div>
+														<div class="textbox">      
+															<input name="loremipsum" id="textbox-here_name" autocomplete="off" type="text" value="xrystalys" drequired/>
+															<span class="textboxbar"></span>
+															<label>Display Name</label>
+														</div>
+														<div class="textbox">      
+															<input name="loremipsum" id="textbox-here_name" autocomplete="off" type="text" value="mrmerkgamma1227@ya.ru" required/>
+															<span class="textboxbar"></span>
+															<label>E-mail</label>
+														</div>
+														<div class="textbox">      
+															<input name="loremipsum" id="textbox-here_name" autocomplete="off" type="text" value="Dimitry" required/>
+															<span class="textboxbar"></span>
+															<label>First Name</label>
+														</div>
+														<div class="textbox">      
+															<input name="loremipsum" id="textbox-here_name" autocomplete="off" type="text" value="Morozov" required/>
+															<span class="textboxbar"></span>
+															<label>Last Name</label>
+														</div>
+													</td>
+												</tr>
 											</table>
-											<center><button class="button hollow x1 gray" type="submit">save</button></center>
+											<div class="_flex _center">
+												<button class="button hollow x1 gray" type="submit">save</button>
+											</div>
 										</form>
 									</div>									
 								</div>
-								<div class="card-container _round _outline _cutbottom">
-									<div class="card-header">
-										<h3 class="h3-card">Billing & Shipping address (editing)</h3><button class="button hollow x1 gray" type="button">cancel</button>
-									</div>
-									<div class="card-content">
-										<div class="message-box">After complete click "save" or "cancel"</div>
+								<div class="card _round _outline _cutbottom">
+									<header>
+										<h3>Billing & Shipping address (editing)</h3><button class="button hollow x1 gray" type="button">cancel</button>
+									</header>
+									<div class="content">
+										<div class="message-box">
+											After complete click "save" or "cancel"
+										</div>
 										<form class="card-form" enctype="application/x-www-form-urlencoded" method="get" id="form-here_name" novalidate="">
 											<table width="100%">
-												<tr><td class="card-label table-margin">
-													<div class="textbox">      
-														<input name="loremipsum" id="textbox-here_name" autocomplete="off" type="text" value="1335 4th St, San Francisco, CA 94158, United States" required/>
-														<span class="textboxbar"></span>
-														<label>Billing address</label>
-													</div>
-													<div class="textbox">      
-														<input name="loremipsum" id="textbox-here_name" autocomplete="off" type="text" value="1335 4th St, San Francisco, CA 94158, United States" required/>
-														<span class="textboxbar"></span>
-														<label>Shipping address</label>
-													</div>
-												</td></tr>
+												<tr>
+													<td>
+														<div class="textbox">      
+															<input name="loremipsum" id="textbox-here_name" autocomplete="off" type="text" value="1335 4th St, San Francisco, CA 94158, United States" required/>
+															<span class="textboxbar"></span>
+															<label>Billing address</label>
+														</div>
+														<div class="textbox">      
+															<input name="loremipsum" id="textbox-here_name" autocomplete="off" type="text" value="1335 4th St, San Francisco, CA 94158, United States" required/>
+															<span class="textboxbar"></span>
+															<label>Shipping address</label>
+														</div>
+													</td>
+												</tr>
 											</table>
-											<center><button class="button hollow x1 gray" type="submit">save</button></center>
+											<div class="_flex _center">
+												<button class="button hollow x1 gray" type="submit">save</button>
+											</div>
 										</form>
 									</div>									
 								</div>

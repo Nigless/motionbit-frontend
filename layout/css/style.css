@@ -288,6 +288,7 @@ floatwindow .card {
 ._fleft {float: left;}
 ._padXL {padding: 16px;}
 ._padX {padding: 8px;}
+._avoidheader {padding-top: 70px;}
 
 /* login card */
 .card.login {width: 300px;}
@@ -439,8 +440,9 @@ span.upload-overlay:hover {
     height: 47px;
 }
 .card header h3 {margin: 13px 0px 0 0;}
-.card content {padding-top: 20px;}
-.card-label {
+.card .content {padding-top: 20px;}
+
+.card table .l {
     text-align: left;
     color: #000;
     font-weight: bold;
@@ -448,13 +450,14 @@ span.upload-overlay:hover {
     font-size: 15px;
     overflow: hidden;
 }
-.card-subtext {
+.card table td {
     text-align: left;
     color: #666;
     font-weight: bold;
     font-family: Segoe UI;
     font-size: 15px;
     overflow: hidden;
+	padding: 10px;
 }
 
 /* message box */
@@ -473,7 +476,6 @@ span.upload-overlay:hover {
 .message-box.info {color: #6414FF;border-color: #6414FF;}
 .message-box.warning {color: #FF785A;border-color: #FF785A;}
 .message-box.error {color: #FF2752;border-color: #FF2752;}
-.table-margin {padding: 10px;}
 
 /* inputs ui */
 

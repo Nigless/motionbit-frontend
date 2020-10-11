@@ -38,6 +38,9 @@ header navbar a::after {
     left: 0%;
     bottom: -15%;
 }
+header navbar .avatar.x32 {
+	margin: 8px 0 0 8px
+}	
 /* Welcome rainbow message */
 welcome .background {
     background: url('../src/art/mainpage_4K.png'); /*<-- may to apply an photo*/

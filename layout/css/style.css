@@ -283,7 +283,7 @@ floatwindow .card {
     margin: auto 0;
 }
 ._space-between {display: flex;justify-content: space-between;}
-._table-cell {display: table-cell};}
+._table-cell {display: table-cell;}
 ._fright {float: right;}
 ._fleft {float: left;}
 ._padXL {padding: 16px;}

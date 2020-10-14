@@ -290,26 +290,6 @@ floatwindow .card {
 ._padX {padding: 8px;}
 ._avoidheader {padding-top: 70px;}
 
-/* login card */
-.card.login {width: 300px;}
-.loginwrap {margin: 0px 0 20px 0;}
-.smtext {color: #aaa; font-size: 12px;}
-.smlink {color: #777; font-size: 12px;}
-.login-welcome-text {
-    margin: 42vh auto auto 0;
-    font-size: 3vw;
-    font-weight: bold;
-    text-transform: uppercase;
-    background: linear-gradient(-119deg, #FF2752, #B41EFF 60%, #2800FF);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: Helvetica;
-    box-sizing: content-box;
-    display: table-column;
-}
-.login-welcome-subtext {
-	font-size: 2vw;
-}
 
 
 /* stretch container */
@@ -425,6 +405,29 @@ span.upload-overlay:hover {
 .button.sidebtn.selected {
     color: #FFF !important;
     background: linear-gradient(45deg, #FF2752, #FF785A);
+}
+
+/* login card */
+.card.login {width: 300px;}
+.card.login header {
+    border: none;
+}
+.smtext {color: #aaa; font-size: 12px;}
+.smlink {color: #777; font-size: 12px;}
+.login-welcome-text {
+    margin: 42vh auto auto 0;
+    font-size: 3vw;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: linear-gradient(-119deg, #FF2752, #B41EFF 60%, #2800FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Helvetica;
+    box-sizing: content-box;
+    display: table-column;
+}
+.login-welcome-subtext {
+	font-size: 2vw;
 }
 
 /* card container*/

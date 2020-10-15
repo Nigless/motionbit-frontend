@@ -2,11 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/App';
 import * as serviceWorker from './serviceWorker';
-import { Reset } from "styled-reset"
 
 ReactDOM.render(
 	<React.StrictMode>
-		<Reset />
 		<App />
 	</React.StrictMode>
 	,

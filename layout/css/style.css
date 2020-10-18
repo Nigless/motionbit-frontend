@@ -43,7 +43,7 @@ header navbar .avatar.x32 {
 }	
 /* Welcome rainbow message */
 welcome .background {
-    background: url('../src/art/mainpage_4K.png'); /*<-- may to apply an photo*/
+    background: url('../src/art/mainpage.png'); /*<-- may to apply an photo*/
     height: 100vh;
     background-size: cover;
 	display: flex;

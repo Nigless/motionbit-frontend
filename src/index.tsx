@@ -1,10 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './components/App';
+import App from './components/App/App';
 import * as serviceWorker from './serviceWorker';
+import { MAIN_FONT, FONT_SIZE } from './variables'
+import { createGlobalStyle } from 'styled-components';
+
+const Reset = createGlobalStyle({
+	'*, *:: after, *:: before': {
+		boxSizing: 'border-box'
+	},
+	body: {
+		fontFamily: MAIN_FONT,
+		fontSize: FONT_SIZE,
+		margin: 0
+	}
+});
 
 ReactDOM.render(
 	<React.StrictMode>
+		<Reset />
 		<App />
 	</React.StrictMode>
 	,

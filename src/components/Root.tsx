@@ -7,8 +7,8 @@ interface Props {
 
 export default function Root({ className, children }: Props) {
 
-	return Array.isArray(children)
-		? createElement('div', { className: className }, children)
-		: cloneElement((children as ReactElement), { className: className })
+	return !Array.isArray(children) && children
+		? cloneElement((children as ReactElement), { className: className })
+		: createElement('div', { className: className }, children)
 
 }

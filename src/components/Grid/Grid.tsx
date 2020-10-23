@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import ClearFix from '../ClearFix';
 import Break from './Break';
 import Item from './Item'
-
+import Flex from '../Flex'
 
 
 interface Props {
@@ -74,16 +74,10 @@ export default function Grid({ className, children, wrap, justify, align }: Prop
 		}
 	})
 
-	const Wrapper = styled(ClearFix)({
-		display: justify || !singleLine || align ? 'flex' : null,
-		flexWrap: 'wrap',
-		alignItems: align,
-		justifyContent: justify,
-
-	})
+	const Wrapper = justify || !singleLine || align ? Flex : ClearFix
 
 	return (
-		<Wrapper wrap={wrap} className={className}>
+		<Wrapper wrap={wrap} className={className} justify={justify} align={align}>
 			{children}
 		</Wrapper>
 	);

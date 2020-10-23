@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/App/App';
 import * as serviceWorker from './serviceWorker';
-import { MAIN_FONT, FONT_SIZE } from './variables'
+import { MAIN_FONT, FONT_SIZE, LINE_HEIGHT } from './variables'
 import { createGlobalStyle } from 'styled-components';
 
 const Reset = createGlobalStyle({
@@ -12,6 +12,7 @@ const Reset = createGlobalStyle({
 	body: {
 		fontFamily: MAIN_FONT,
 		fontSize: FONT_SIZE,
+		lineHeight: LINE_HEIGHT,
 		margin: 0
 	}
 });

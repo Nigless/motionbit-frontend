@@ -20,19 +20,20 @@ const Menu = styled.ul({
 	display: 'flex'
 })
 
-const Body = styled(Grid)({
-	height: '80px'
+const Body: typeof Grid = styled(Grid)({
+	height: '80px',
+	padding: '0 20px'
 })
 
 export default function Navigation() {
 	return (
 		<Wrapper>
 			<Container maxWidth="1200px">
-				<Body wrap="nav" align="center">
+				<Body justify="space-between" wrap="nav" align="center">
 					<Item>
 						<img src={logoImg} alt="Логотип MotionBit" height="13px" />
 					</Item>
-					<Item width="1">
+					<Item>
 						<Menu>
 							<li>
 								<Button color="inherit">Home</Button>

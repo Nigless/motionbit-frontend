@@ -10,13 +10,14 @@ import Grid from '../Grid/Grid';
 import Break from '../Grid/Break';
 
 const Header = styled(Grid)({
-	height: '100vh'
+	height: '100vh',
+	padding: '0 20px'
 })
 
 const Title = styled.span({
 	fontWeight: 'bold',
 	textTransform: 'uppercase',
-	marginLeft: 50,
+	marginLeft: 20,
 	fontSize: '5rem'
 });
 
@@ -24,6 +25,9 @@ const Promo = styled.img({
 	height: 300,
 	objectFit: 'contain',
 	padding: 30
+})
+const Body = styled(Container)({
+	padding: '0 20px'
 })
 
 export default function App(): JSX.Element {
@@ -39,7 +43,7 @@ export default function App(): JSX.Element {
 					</Item>
 				</Header>
 			</Container>
-			<Container maxWidth="1200px">
+			<Body maxWidth="1200px">
 				<Grid align="center">
 					<Item width="1fr">
 						<Promo src={laptopImg} />
@@ -65,7 +69,7 @@ export default function App(): JSX.Element {
 						<Promo src={cubesImg} />
 					</Item>
 				</Grid>
-			</Container>
+			</Body>
 			<Footer />
 		</>
 	);

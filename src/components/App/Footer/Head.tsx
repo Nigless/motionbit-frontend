@@ -1,6 +1,6 @@
 ﻿import React from "react";
 import styled from "styled-components"
-import Ulist from '../Ulist'
+import Ulist from '../../Ulist'
 import logoImg from './MOTIONBIT_WORDMARK.svg'
 import A from './A'
 

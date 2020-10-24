@@ -1,6 +1,4 @@
 ﻿import React, { Children, cloneElement, isValidElement, ReactElement, ReactNode } from 'react';
-import styled from 'styled-components';
-import ClearFix from '../ClearFix';
 import Break from './Break';
 import Item from './Item'
 import Flex from '../Flex'
@@ -25,7 +23,7 @@ interface Props {
 	'baseline'
 }
 
-export default function Grid({ className, children, wrap, justify, align }: Props) {
+export default function Grid({ className, children, wrap }: Props) {
 
 	let sizes: string[][] = [['100%']]
 	let row: number = 0
@@ -54,7 +52,6 @@ export default function Grid({ className, children, wrap, justify, align }: Prop
 		(size.length > 1 ? `(${size.join(' - ')})` : size) +
 		(parts[i] !== 0 ? ` / ${parts[i]}` : ''))
 
-	let singleLine: boolean = true
 	row = 0
 	children = Children.map(children, (children, i) => {
 		let child = (children! as ReactElement)
@@ -68,17 +65,14 @@ export default function Grid({ className, children, wrap, justify, align }: Prop
 				return child
 
 			case Break:
-				singleLine = false
 				row++
 				break
 		}
 	})
 
-	const Wrapper = justify || !singleLine || align ? Flex : ClearFix
-
 	return (
-		<Wrapper wrap={wrap} className={className} justify={justify} align={align}>
+		<Flex wrap={wrap} className={className}>
 			{children}
-		</Wrapper>
+		</Flex>
 	);
 }

@@ -2,8 +2,7 @@
 import styled from "styled-components"
 import Ulist from '../Ulist'
 import logoImg from './MOTIONBIT_WORDMARK.svg'
-import Lnk from './A'
-import Flex from '../Flex'
+import A from './A'
 
 const Logo = styled.img({
 	height: '1em'
@@ -13,11 +12,10 @@ const List = styled(Ulist)({
 	listStyle: 'none',
 	padding: 0,
 	display: 'flex',
-	margin: 0
-})
-
-const A = styled(Lnk)({
-	marginRight: 5
+	margin: 0,
+	'& li+li': {
+		marginLeft: 5
+	}
 })
 
 const Body = styled.div({

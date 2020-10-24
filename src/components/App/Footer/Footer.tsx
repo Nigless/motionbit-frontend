@@ -1,9 +1,9 @@
 ﻿import React from "react";
 import styled from "styled-components"
-import Container from "../Container";
-import Grid from "../Grid/Grid";
-import Item from "../Grid/Item";
-import Ulist from '../Ulist'
+import Container from "../../Container";
+import Grid from "../../Grid/Grid";
+import Item from "../../Grid/Item";
+import Ulist from '../../Ulist'
 import A from "./A";
 import Head from "./Head";
 

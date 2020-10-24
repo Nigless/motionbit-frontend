@@ -5,6 +5,8 @@ import logoImg from './MOTIONBIT_WORDMARK.svg'
 import Item from '../Grid/Item'
 import Container from "../Container";
 import Grid from "../Grid/Grid";
+import Flex from '../Flex'
+import Ulist from '../Ulist'
 
 const Wrapper = styled.div({
 	position: 'fixed',
@@ -13,7 +15,7 @@ const Wrapper = styled.div({
 	background: 'rgba(255,255,255,.9)'
 })
 
-const Menu = styled.ul({
+const Menu = styled(Ulist)({
 	margin: 0,
 	padding: 0,
 	listStyle: 'none',
@@ -29,27 +31,21 @@ export default function Navigation() {
 	return (
 		<Wrapper>
 			<Container maxWidth="1200px">
-				<Body justify="space-between" wrap="nav" align="center">
-					<Item>
-						<img src={logoImg} alt="Логотип MotionBit" height="13px" />
-					</Item>
-					<Item>
-						<Menu>
-							<li>
+				<Flex justify="space-between" align="center" >
+					<Body wrap="nav" >
+						<Item>
+							<img src={logoImg} alt="Логотип MotionBit" height="13px" />
+						</Item>
+						<Item>
+							<Menu>
 								<Button color="inherit">Home</Button>
-							</li>
-							<li>
 								<Button color="inherit">Downloads</Button>
-							</li>
-							<li>
 								<Button color="inherit">Support</Button>
-							</li>
-							<li>
 								<Button color="inherit">Sign in</Button>
-							</li>
-						</Menu>
-					</Item>
-				</Body>
+							</Menu>
+						</Item>
+					</Body>
+				</Flex>
 			</Container>
 		</Wrapper>
 	)
